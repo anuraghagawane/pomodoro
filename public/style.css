@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+body {
+  margin: 0;
+  background: url("images/background.png");
+}
+
+.header {
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.7em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  background: #30475eba;
+  padding: 22px 159px;
+  color: #ffffff;
+}
+
+.dropDown-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropDown {
+  margin: 80px 130px -11px;
+  padding: 9px 88px;
+  color: #f05454;
+  font-size: 1.2em;
+  font-family: "Patrick Hand", cursive;
+  border: 2px solid #222831;
+  border-radius: 7px;
+}
+
+.timer-container {
+  text-align: center;
+}
+
+.timer {
+  font-size: 11em;
+  color: #f05454;
+  font-family: "Patrick Hand", cursive;
+  letter-spacing: 10px;
+}
