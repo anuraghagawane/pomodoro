@@ -12,8 +12,16 @@ body {
   font-weight: 900;
   letter-spacing: 2px;
   background: #30475eba;
-  padding: 22px 159px;
+  padding: 16px 159px;
   color: #ffffff;
+}
+
+.image {
+  height: 1.2em;
+  position: relative;
+  top: 7px;
+  padding: 0px 10px 0px 0px;
+  filter: invert(1);
 }
 
 .dropDown-container {
@@ -23,7 +31,7 @@ body {
 }
 
 .dropDown {
-  margin: 80px 130px -11px;
+  margin: 60px 130px -11px;
   padding: 9px 88px;
   color: #f05454;
   font-size: 1.2em;
@@ -37,8 +45,23 @@ body {
 }
 
 .timer {
-  font-size: 11em;
+  font-size: 15em;
   color: #f05454;
   font-family: "Patrick Hand", cursive;
   letter-spacing: 10px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+.controls-container {
+  justify-content: center;
+  display: flex;
+}
+
+.controls {
+  height: 50px;
+  margin: 10px;
+  border-radius: 30%;
+  padding: 22px;
+  background-color: #68798abf;
 }
