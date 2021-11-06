@@ -17,7 +17,7 @@ function DropDown(props) {
         onChange={updateTime}
         value={props.timer.workTime}
       >
-        <option value="25">25 min</option>
+        <option value="2">2 min</option>
         <option value="30">30 min</option>
         <option value="45">45 min</option>
       </select>
@@ -29,7 +29,7 @@ function DropDown(props) {
         onChange={updateTime}
         value={props.timer.restTime}
       >
-        <option value="5">5 min</option>
+        <option value="1">1 min</option>
         <option value="10">10 min</option>
         <option value="15">15 min</option>
       </select>
