@@ -9,7 +9,18 @@ function DropDown(props) {
   }
 
   return (
-    <div className="dropDown-container">
+    <div
+      className="dropDown-container"
+      style={
+        props.stop
+          ? null
+          : {
+              visibility: "hidden",
+              transform: "translateY(-100px)",
+              transform: "scale(0.3)",
+            }
+      }
+    >
       <select
         className="dropDown"
         placeholder="workTime"

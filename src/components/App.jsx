@@ -6,18 +6,26 @@ import Controls from "./controls";
 
 function App() {
   const [timer, updateTimer] = useState({
-    workTime: 2,
-    restTime: 1,
-    sets: 2,
+    workTime: "0",
+    restTime: "",
+    sets: 1,
   });
   const [play, setPlay] = useState(false);
+  const [stop, setStop] = useState(true);
 
   return (
     <div>
       <Header />
-      <DropDown updateTimer={updateTimer} timer={timer} />
-      <Timer timer={timer} play={play} updateTimer={updateTimer} />
-      <Controls setPlay={setPlay} play={play} />
+      <DropDown updateTimer={updateTimer} timer={timer} stop={stop} />
+      <Timer
+        timer={timer}
+        play={play}
+        updateTimer={updateTimer}
+        stop={stop}
+        setStop={setStop}
+        setPlay={setPlay}
+      />
+      <Controls setPlay={setPlay} play={play} stop={stop} setStop={setStop} />
     </div>
   );
 }

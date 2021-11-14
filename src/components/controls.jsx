@@ -5,19 +5,33 @@ import Stop from "../img/stop-solid.svg";
 
 function Controls(props) {
   function updatePlay() {
+    props.setStop(false);
     props.setPlay((prevValue) => {
       return !prevValue;
     });
   }
+
+  function stopTimer() {
+    props.setPlay(false);
+    props.setStop(true);
+  }
   return (
     <div className="controls-container">
       {props.play ? (
-        <img
-          onClick={updatePlay}
-          className="controls"
-          src={Pause}
-          alt="Pause"
-        ></img>
+        <div>
+          <img
+            onClick={updatePlay}
+            className="controls"
+            src={Pause}
+            alt="Pause"
+          ></img>
+          <img
+            onClick={stopTimer}
+            className="controls"
+            src={Stop}
+            alt="Stop"
+          ></img>
+        </div>
       ) : (
         <img
           onClick={updatePlay}
@@ -26,8 +40,6 @@ function Controls(props) {
           alt="Play"
         ></img>
       )}
-      {/* <img className="controls" src={Stop} alt="Stop"></img>
-       */}
     </div>
   );
 }
